@@ -1,0 +1,38 @@
+.flexContainer {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mySkills {
+    text-align: center;
+}
+
+.myWork {
+    text-align: center;
+}
+
+.workGrid {
+    display: grid;
+}
+
+.item1 {
+    grid-area: myArea;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea myArea';
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "mySkills" "myWork";
+}
+
+@media only screen and (max-width:600) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
